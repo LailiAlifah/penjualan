@@ -1,4 +1,7 @@
 <div class="container">
+  <div class="row-mt-3">
+    <div class="colmd-6"></div>
+      <a href="" class="btn btn-primary">Tambah Data Barang</a>
 <table class="table">
   <thead>
     <tr>
