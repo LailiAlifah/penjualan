@@ -49,6 +49,7 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
+                      <th scope="col">No</th>
                       <th scope="col">Kode Barang</th>
                       <th scope="col">Nama Barang </th>
                       <th scope="col">Harga</th>
@@ -58,7 +59,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                      <?php foreach ($barang as $brg):?>
+                      <?php foreach ($barang as $brg): ?>
+                        <td><?= ++$start;?></td>
                         <td><?= $brg['id_barang'];?></td>
                         <td><?= $brg['nama_barang'];?></td>
                         <td><?= $brg['harga'];?></td>
@@ -73,6 +75,7 @@
                     </tr>
                 </tbody>
             </table>
+            <?= $this->pagination->create_links(); ?>
         </div>
     </div>
 </div>
